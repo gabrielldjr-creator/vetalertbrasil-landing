@@ -321,6 +321,65 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Positioning section */}
+        <section>
+          <h2>Posicionamento do Vet Alert Brasil na Hierarquia Sanitária</h2>
+          <p>
+            No contexto sanitário veterinário, existem dois estados formalmente
+            reconhecidos: a suspeita clínica individual não estruturada e o caso
+            confirmado por diagnóstico e/ou laudo laboratorial. O Vet Alert
+            Brasil atua em um terceiro estado, intermediário e legítimo, de
+            vigilância sindrômica clínica agregada, com sinalização precoce de
+            padrões regionais e inteligência epidemiológica pré-diagnóstica, sem
+            atribuição causal ou diagnóstica.
+          </p>
+          <div className="info-grid">
+            <div className="card">
+              <h3>O Vet Alert Brasil NÃO é</h3>
+              <ul className="list">
+                <li className="list-item">Não é diagnóstico.</li>
+                <li className="list-item">Não é confirmação clínica.</li>
+                <li className="list-item">Não é laudo.</li>
+                <li className="list-item">Não é notificação compulsória.</li>
+                <li className="list-item">
+                  Não substitui sistemas oficiais (CIDASC, MAPA, PNSE, etc.).
+                </li>
+              </ul>
+            </div>
+            <div className="card">
+              <h3>O Vet Alert Brasil É</h3>
+              <ul className="list">
+                <li className="list-item">
+                  Um sistema de atenção clínica coletiva.
+                </li>
+                <li className="list-item">
+                  Um indicador precoce de padrões emergentes.
+                </li>
+                <li className="list-item">
+                  Um apoio à vigilância profissional individual e institucional.
+                </li>
+                <li className="list-item">
+                  Um complemento informacional aos sistemas oficiais.
+                </li>
+              </ul>
+            </div>
+            <div className="card">
+              <h3>Doenças de notificação obrigatória</h3>
+              <p>
+                O uso do Vet Alert Brasil não exime o(a) médico(a) veterinário(a)
+                da obrigação legal de notificação. Diante de suspeitas
+                compatíveis, o caminho correto continua sendo investigação
+                clínica, exames laboratoriais e notificação aos órgãos
+                competentes.
+              </p>
+            </div>
+          </div>
+          <p>
+            O Vet Alert Brasil amplia a percepção coletiva sem substituir a
+            responsabilidade clínica, diagnóstica ou legal do médico veterinário.
+          </p>
+        </section>
+
         {/* Call to action section */}
         <section className="cta">
           <h2>Participação no piloto</h2>
