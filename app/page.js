@@ -15,143 +15,121 @@ export default function HomePage() {
       </header>
 
       <main>
-        {/* Section 1 — Primeira dobra */}
+        {/* Section 1 — Aparência de sistema */}
         <section className="hero" id="inicio">
           <div className="hero-content">
             <p className="hero-eyebrow">Sistema institucional</p>
             <h1>
-              Veja o que outros veterinários da sua região estão atendendo — em
-              tempo real.
+              Monitoramento clínico regional — visão compartilhada entre
+              veterinários.
             </h1>
             <p className="hero-subtitle">
-              O Vet Alert Brasil permite registrar sinais clínicos suspeitos de
-              forma anônima e visualizar padrões regionais antes que surtos se
-              tornem evidentes.
+              Sinais clínicos suspeitos registrados de forma anônima por
+              veterinários da sua região, atualizados em tempo real.
             </p>
-            <div className="hero-changes">
-              <h2>O que muda amanhã</h2>
-              <ul className="list">
-                <li className="list-item">
-                  Você começa o dia sabendo se colegas da sua região estão vendo
-                  algo fora do padrão.
-                </li>
-                <li className="list-item">
-                  Você reduz surpresa diante de surtos ou intoxicações
-                  emergentes.
-                </li>
-                <li className="list-item">
-                  Você pode orientar sua atenção clínica com base em contexto
-                  regional real.
-                </li>
-              </ul>
-            </div>
-            <div className="hero-actions">
-              <a className="primary-button" href="#funcionamento">
-                Entender como funciona
-              </a>
-            </div>
+            <p className="hero-authority">
+              Camada pré-diagnóstica de vigilância clínica agregada.
+            </p>
           </div>
         </section>
 
-        {/* Section 2 — Exemplo concreto */}
-        <section className="panel" id="exemplo">
-          <h2>Como isso aparece na prática</h2>
-          <p className="quote">
-            “Você atende um cavalo com sinais neurológicos atípicos. No Vet
-            Alert, você vê que outros veterinários da região registraram quadros
-            semelhantes nos últimos dias. Isso não define o diagnóstico, mas
-            muda seu nível de atenção e vigilância.”
-          </p>
-        </section>
-
-        {/* Section 3 — Como funciona */}
-        <section className="panel" id="funcionamento">
-          <h2>Funcionamento básico</h2>
+        {/* Section 2 — Desconforto cognitivo sutil */}
+        <section className="panel" id="invisivel">
+          <h2>O que hoje não é visível</h2>
           <div className="grid-cards">
             <div className="card">
-              <strong>1.</strong> O veterinário registra um alerta clínico de
-              forma anônima.
+              Casos atendidos de forma isolada não revelam padrões regionais.
             </div>
             <div className="card">
-              <strong>2.</strong> O sistema agrega sinais semelhantes por região.
+              A confirmação diagnóstica ocorre após o impacto inicial.
             </div>
             <div className="card">
-              <strong>3.</strong> Padrões emergentes tornam-se visíveis para
-              outros profissionais.
+              Alertas oficiais surgem quando o evento já está estabelecido.
             </div>
             <div className="card">
-              <strong>4.</strong> Cada veterinário decide sua conduta clínica de
-              forma independente.
+              Entre a suspeita individual e o laudo, há um vazio informacional.
             </div>
           </div>
-          <p className="section-note">
-            O sistema não recomenda condutas nem gera decisões automáticas.
+        </section>
+
+        {/* Section 3 — A camada que faltava */}
+        <section className="panel" id="camada">
+          <h2>Onde o Vet Alert atua</h2>
+          <p>
+            O Vet Alert Brasil opera exclusivamente no intervalo entre a
+            suspeita clínica individual e a confirmação diagnóstica formal.
+          </p>
+          <p className="section-note">Não substitui certeza. Amplia percepção.</p>
+        </section>
+
+        {/* Section 4 — Uso imediato */}
+        <section className="panel" id="pratica">
+          <h2>Como isso se traduz na prática</h2>
+          <p className="quote">
+            “Antes de iniciar os atendimentos do dia, o veterinário pode
+            verificar se há registros recentes de quadros semelhantes em sua
+            região. Isso não define diagnóstico, mas altera o nível de atenção
+            clínica.”
           </p>
         </section>
 
-        {/* Section 4 — Limites claros */}
+        {/* Section 5 — Limites que tranquilizam */}
         <section className="panel" id="limites">
-          <h2>Limites de atuação</h2>
+          <h2>Limites claros de atuação</h2>
           <ul className="list">
             <li className="list-item">Não realiza diagnóstico.</li>
-            <li className="list-item">Não confirma doenças.</li>
+            <li className="list-item">Não atribui causa.</li>
+            <li className="list-item">Não recomenda conduta.</li>
             <li className="list-item">Não substitui exames laboratoriais.</li>
-            <li className="list-item">
-              Não é sistema de notificação compulsória.
-            </li>
-            <li className="list-item">Não substitui órgãos oficiais.</li>
+            <li className="list-item">Não atua como notificação oficial.</li>
+            <li className="list-item">Não interfere na autonomia clínica.</li>
           </ul>
           <p className="section-note">
-            O Vet Alert Brasil atua exclusivamente como ferramenta de percepção
-            coletiva.
+            O uso do sistema não altera responsabilidades legais existentes.
           </p>
         </section>
 
-        {/* Section 5 — Posicionamento */}
-        <section className="panel" id="posicionamento">
-          <h2>Onde o Vet Alert se posiciona</h2>
-          <p>
-            Atualmente, os sistemas formais reconhecem dois estados principais:
-            1) Suspeita clínica individual 2) Caso confirmado por diagnóstico
-            e/ou laudo.
-          </p>
-          <p>
-            O Vet Alert Brasil atua em um terceiro estado informacional:
-            vigilância sindrômica clínica agregada, permitindo atenção precoce a
-            padrões regionais, antes da confirmação diagnóstica.
+        {/* Section 6 — Hierarquia sanitária */}
+        <section className="panel" id="hierarquia">
+          <h2>Hierarquia da informação clínica</h2>
+          <ol className="ordered-list">
+            <li>Suspeita clínica individual</li>
+            <li>Vigilância sindrômica clínica agregada (Vet Alert Brasil)</li>
+            <li>Confirmação diagnóstica e notificação oficial</li>
+          </ol>
+          <p className="section-note">
+            Cada camada cumpre uma função distinta e não substitui as demais.
           </p>
           <div className="callout">
-            O uso do Vet Alert Brasil não exime o profissional da obrigação legal
-            de notificação imediata de doenças de notificação compulsória aos
-            órgãos competentes.
+            Doenças de notificação obrigatória devem seguir os protocolos
+            oficiais independentemente do uso do Vet Alert Brasil.
           </div>
         </section>
 
-        {/* Section 6 — Ética, dados e responsabilidade */}
+        {/* Section 7 — Ética e dados */}
         <section className="panel" id="etica">
-          <h2>Ética e dados</h2>
+          <h2>Dados e ética</h2>
           <ul className="list">
-            <li className="list-item">Registros anonimizados e agregados.</li>
+            <li className="list-item">Registros anonimizados.</li>
+            <li className="list-item">Dados exclusivamente agregados.</li>
             <li className="list-item">Nenhum dado de tutor coletado.</li>
-            <li className="list-item">Nenhuma conduta clínica recomendada.</li>
             <li className="list-item">Nenhuma decisão automatizada.</li>
             <li className="list-item">Conformidade com LGPD.</li>
           </ul>
         </section>
 
-        {/* Section 7 — Piloto */}
+        {/* Section 8 — Ação discreta */}
         <section className="panel cta" id="piloto">
-          <h2>Piloto em Santa Catarina</h2>
+          <h2>Acesso ao piloto</h2>
           <p>
-            O Vet Alert Brasil está em fase piloto, com adesão voluntária de
-            médicos veterinários, para avaliação de clareza, utilidade e impacto
-            prático no campo.
+            Sistema em fase piloto, com participação voluntária de médicos
+            veterinários.
           </p>
           <a
             className="primary-button"
             href="https://vet-alert-brasil.vercel.app/"
           >
-            Participar do piloto
+            Acessar o sistema
           </a>
         </section>
       </main>

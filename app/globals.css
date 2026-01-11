@@ -136,18 +136,9 @@ p {
   color: var(--color-text);
 }
 
-.hero-changes {
-  border: 1px solid #d9e2ea;
-  border-radius: 1.25rem;
-  padding: 1.5rem;
-  background: #ffffff;
-  display: grid;
-  gap: 1rem;
-}
-
-.hero-changes h2 {
-  margin-bottom: 0;
-  font-size: 1.1rem;
+.hero-authority {
+  font-size: 0.98rem;
+  color: var(--color-muted);
 }
 
 .hero-actions {
@@ -201,11 +192,6 @@ p {
   color: var(--color-text);
 }
 
-.card strong {
-  color: var(--color-accent-strong);
-  margin-right: 0.25rem;
-}
-
 .section-note {
   font-size: 0.98rem;
   color: var(--color-muted);
@@ -238,6 +224,18 @@ p {
   padding: 1rem 1.25rem;
   color: var(--color-text);
   font-weight: 500;
+}
+
+.ordered-list {
+  padding-left: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--color-text);
+}
+
+.ordered-list li::marker {
+  color: var(--color-accent-strong);
+  font-weight: 600;
 }
 
 .cta {
