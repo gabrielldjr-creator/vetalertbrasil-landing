@@ -549,6 +549,44 @@ ul {
   padding: 1rem 1.25rem;
 }
 
+.hierarchy {
+  background: #f7f9fb;
+  border: 1px solid var(--color-border);
+  border-radius: 1.75rem;
+  padding: 2.5rem;
+}
+
+.hierarchy > p {
+  max-width: 900px;
+}
+
+.hierarchy .info-grid {
+  margin-top: 1.75rem;
+}
+
+.hierarchy .card {
+  background: #ffffff;
+  border-left: 4px solid #c3d2dc;
+}
+
+.hierarchy .card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.hierarchy .list {
+  margin-top: 0.5rem;
+}
+
+.hierarchy .list-item {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.hierarchy .list-item::before {
+  color: var(--color-accent-strong);
+}
+
 .cta {
   border: 1px solid var(--color-border);
   border-radius: 1.75rem;

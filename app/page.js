@@ -139,7 +139,7 @@ export default function HomePage() {
         </section>
 
         {/* Core principles summary */}
-        <section>
+        <section className="hierarchy">
           <div className="metrics">
             <div className="metric-card">
               <span aria-hidden="true">📍</span>
@@ -169,7 +169,7 @@ export default function HomePage() {
         </section>
 
         {/* What it is section */}
-        <section>
+        <section className="hierarchy">
           <h2>O que é</h2>
           <p>
             Vet Alert Brasil é uma plataforma de inteligência epidemiológica que
@@ -180,7 +180,7 @@ export default function HomePage() {
         </section>
 
         {/* How it works section */}
-        <section>
+        <section className="hierarchy">
           <h2>Como funciona</h2>
           <div className="info-grid">
             <div className="card">
@@ -322,7 +322,7 @@ export default function HomePage() {
         </section>
 
         {/* Positioning section */}
-        <section>
+        <section className="hierarchy">
           <h2>Posicionamento do Vet Alert Brasil na Hierarquia Sanitária</h2>
           <p>
             No contexto sanitário veterinário, existem dois estados formalmente
