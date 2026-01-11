@@ -40,17 +40,100 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-card">
-            <h2>Resumo essencial</h2>
-            <p>
-              Gratuito, anônimo e rápido — transforma experiências isoladas em
-              inteligência coletiva que protege você, seus pacientes e sua
-              região.
-            </p>
+            <div className="hero-card-header">
+              <div>
+                <h2>Resumo essencial</h2>
+                <p>
+                  Gratuito, anônimo e rápido — transforma experiências isoladas
+                  em inteligência coletiva que protege você, seus pacientes e
+                  sua região.
+                </p>
+              </div>
+              <div className="hero-card-badge">Em tempo real</div>
+            </div>
             <div className="hero-tags">
               <span>Gratuito</span>
               <span>Anônimo</span>
               <span>Rápido</span>
               <span>Ético</span>
+            </div>
+            <div className="hero-signal">
+              <div>
+                <strong>Sinal regional</strong>
+                <span>Santa Catarina • Últimas 24h</span>
+              </div>
+              <span className="signal-pill">Tendência ↑</span>
+            </div>
+          </div>
+        </section>
+
+        {/* App preview section */}
+        <section className="app-preview">
+          <div className="app-preview-text">
+            <h2>Como a plataforma aparece no seu dia</h2>
+            <p>
+              Interface direta, sem ruído, com visão regional contínua. Você
+              registra alertas em menos de 60 segundos e acessa sinais objetivos
+              antes do próximo atendimento.
+            </p>
+            <div className="app-preview-highlights">
+              <div>
+                <h3>Registro essencial</h3>
+                <p>Campos mínimos e objetivos, sem burocracia.</p>
+              </div>
+              <div>
+                <h3>Mapa de sinais</h3>
+                <p>Indicadores clínicos agregados por região.</p>
+              </div>
+              <div>
+                <h3>Consulta rápida</h3>
+                <p>Atualização contínua com contexto regional.</p>
+              </div>
+            </div>
+          </div>
+          <div className="app-preview-card">
+            <div className="preview-header">
+              <div className="preview-avatar">V</div>
+              <div>
+                <span className="preview-title">Vet Alert Brasil</span>
+                <span className="preview-subtitle">Painel regional</span>
+              </div>
+              <span className="preview-status">Ativo</span>
+            </div>
+            <div className="preview-alerts">
+              <div className="preview-alert">
+                <span className="alert-icon">📍</span>
+                <div>
+                  <strong>Inteligência epidemiológica regional</strong>
+                  <p>
+                    Sinais do campo e do consultório agregados em tempo real.
+                    Sem orientação clínica — apenas padrão e frequência.
+                  </p>
+                </div>
+              </div>
+              <div className="preview-alert">
+                <span className="alert-icon">🔒</span>
+                <div>
+                  <strong>Alertas 100% anônimos</strong>
+                  <p>
+                    Nenhum nome, CRMV ou dado pessoal. Apenas território,
+                    espécie e sinal.
+                  </p>
+                </div>
+              </div>
+              <div className="preview-alert">
+                <span className="alert-icon">🩺</span>
+                <div>
+                  <strong>Para veterinários em atividade</strong>
+                  <p>
+                    Consulte rapidamente antes do plantão ou entre atendimentos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="preview-footer">
+              <span>Última atualização: agora</span>
+              <span className="signal-pill">Sinais consistentes</span>
             </div>
           </div>
         </section>
