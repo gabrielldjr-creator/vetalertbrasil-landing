@@ -7,6 +7,11 @@ export const metadata = {
     "Plataforma de inteligência epidemiológica veterinária com alertas regionais anônimos.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
