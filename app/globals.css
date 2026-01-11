@@ -43,6 +43,11 @@ section {
   margin: 0 auto;
 }
 
+main > section + section {
+  padding-top: 3rem;
+  border-top: 1px solid #e6ebf0;
+}
+
 h1,
 h2,
 h3 {
@@ -238,6 +243,10 @@ ul {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
 }
 
 .hero-signal {
@@ -255,7 +264,14 @@ ul {
   color: var(--color-text);
 }
 
-.hero-signal span {
+.hero-signal > div span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: #f1f5f8;
+  border: 1px solid #d9e2ea;
   font-size: 0.9rem;
   color: var(--color-muted);
 }
@@ -276,6 +292,10 @@ ul {
   display: grid;
   gap: 2.5rem;
   align-items: center;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  border: 1px solid var(--color-border);
+  background: #f7f9fb;
 }
 
 @media (min-width: 900px) {
@@ -369,6 +389,7 @@ ul {
   border-radius: 1.1rem;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
+  border-left: 4px solid #c8d5dd;
 }
 
 .preview-alert strong {
@@ -386,6 +407,15 @@ ul {
   justify-content: space-between;
   font-size: 0.9rem;
   color: var(--color-muted);
+  background: #f5f7fa;
+  border: 1px solid #e0e7ee;
+  border-radius: 0.9rem;
+  padding: 0.6rem 0.9rem;
+}
+
+.preview-footer > span:first-child {
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 .metrics {
@@ -407,6 +437,7 @@ ul {
   display: grid;
   gap: 0.75rem;
   box-shadow: none;
+  border-left: 4px solid #c9d6de;
 }
 
 .metric-card span {
@@ -430,6 +461,7 @@ ul {
   padding: 1.75rem;
   background: var(--color-surface);
   box-shadow: none;
+  border-left: 4px solid #c9d6de;
 }
 
 .card h3 {
@@ -462,6 +494,7 @@ ul {
   display: grid;
   gap: 0.5rem;
   box-shadow: none;
+  border-left: 4px solid #c1d1dc;
 }
 
 .collective {
@@ -509,6 +542,11 @@ ul {
 .quote {
   font-style: italic;
   color: var(--color-muted);
+  background: #f5f7fa;
+  border: 1px solid #e0e7ee;
+  border-left: 4px solid #c2d1db;
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
 }
 
 .cta {
@@ -570,6 +608,10 @@ footer a {
   .app-preview-card {
     padding: 1.75rem;
   }
+
+  .app-preview {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -592,6 +634,10 @@ footer a {
 
   .app-preview {
     gap: 2rem;
+  }
+
+  .app-preview {
+    padding: 1.75rem;
   }
 
   .preview-header {
