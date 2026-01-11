@@ -4,12 +4,12 @@
   --color-text: #0b1b2b;
   --color-muted: #4b5563;
   --color-border: #e2e8f0;
-  --color-accent: #1f6f78;
-  --color-accent-strong: #14555d;
+  --color-accent: #1e5b74;
+  --color-accent-strong: #123e52;
   --color-background: #ffffff;
-  --color-surface: #f8fafc;
-  --color-surface-strong: #eef5f4;
-  --shadow-soft: 0 18px 48px rgba(15, 23, 42, 0.08);
+  --color-surface: #f4f6f8;
+  --color-surface-strong: #eef2f6;
+  --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.06);
 }
 
 * {
@@ -74,8 +74,8 @@ section > h2 {
 
 section > h2::before {
   content: "";
-  width: 28px;
-  height: 4px;
+  width: 24px;
+  height: 3px;
   border-radius: 999px;
   background: var(--color-accent);
 }
@@ -99,13 +99,13 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #d3f4ef, #eefaf8);
+  background: #e8eef2;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   color: var(--color-accent-strong);
-  border: 1px solid #cceae5;
+  border: 1px solid #d6dde3;
 }
 
 .header-text {
@@ -127,11 +127,11 @@ ul {
 .hero {
   display: grid;
   gap: 2rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #edf8f6 100%);
+  background: #f8fafb;
   padding: 3rem;
   border-radius: 2rem;
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
 }
 
 @media (min-width: 900px) {
@@ -180,7 +180,7 @@ ul {
   font-size: 1rem;
   border: none;
   width: fit-content;
-  box-shadow: 0 10px 26px rgba(31, 111, 120, 0.25);
+  box-shadow: none;
 }
 
 .hero-card {
@@ -190,6 +190,12 @@ ul {
   padding: 2.25rem;
   display: grid;
   gap: 1.5rem;
+  box-shadow: none;
+}
+
+.hero-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-card-header {
@@ -203,34 +209,35 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(31, 111, 120, 0.08);
+  background: #eef3f5;
   color: var(--color-accent-strong);
   border-radius: 999px;
   padding: 0.35rem 0.95rem;
   font-size: 0.75rem;
   font-weight: 600;
-  border: 1px solid rgba(31, 111, 120, 0.2);
+  border: 1px solid #d3dde3;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   white-space: nowrap;
 }
 
 .hero-tags {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.6rem;
 }
 
 .hero-tags span {
-  background: rgba(31, 111, 120, 0.08);
+  background: #f1f4f6;
   color: var(--color-accent-strong);
   border-radius: 999px;
-  padding: 0.4rem 0.9rem;
+  padding: 0.45rem 0.9rem;
   font-size: 0.82rem;
   font-weight: 600;
-  border: 1px solid rgba(31, 111, 120, 0.18);
+  border: 1px solid #d7e0e6;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-signal {
@@ -254,13 +261,13 @@ ul {
 }
 
 .signal-pill {
-  background: rgba(31, 111, 120, 0.12);
+  background: #e9eff2;
   color: var(--color-accent-strong);
   border-radius: 999px;
   padding: 0.35rem 0.85rem;
   font-size: 0.78rem;
   font-weight: 700;
-  border: 1px solid rgba(31, 111, 120, 0.2);
+  border: 1px solid #d3dde3;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -303,7 +310,7 @@ ul {
   border: 1px solid var(--color-border);
   background: #ffffff;
   padding: 2.25rem;
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
   display: grid;
   gap: 1.5rem;
 }
@@ -319,13 +326,13 @@ ul {
   width: 42px;
   height: 42px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #d3f4ef, #f5fbfa);
+  background: #edf2f5;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   color: var(--color-accent-strong);
-  border: 1px solid #d9eeea;
+  border: 1px solid #d5dde3;
 }
 
 .preview-title {
@@ -340,12 +347,13 @@ ul {
 }
 
 .preview-status {
-  background: #def7f2;
+  background: #eef3f5;
   color: var(--color-accent-strong);
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.3rem 0.65rem;
   border-radius: 999px;
+  border: 1px solid #d3dde3;
 }
 
 .preview-alerts {
@@ -398,6 +406,7 @@ ul {
   background: var(--color-surface);
   display: grid;
   gap: 0.75rem;
+  box-shadow: none;
 }
 
 .metric-card span {
@@ -420,6 +429,7 @@ ul {
   border-radius: 1.4rem;
   padding: 1.75rem;
   background: var(--color-surface);
+  box-shadow: none;
 }
 
 .card h3 {
@@ -451,7 +461,7 @@ ul {
   background: #ffffff;
   display: grid;
   gap: 0.5rem;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  box-shadow: none;
 }
 
 .collective {
@@ -460,6 +470,7 @@ ul {
   padding: 2.75rem;
   display: grid;
   gap: 2rem;
+  border: 1px solid var(--color-border);
 }
 
 .collective-highlights {
@@ -506,7 +517,7 @@ ul {
   padding: 2.25rem;
   display: grid;
   gap: 1.5rem;
-  background: #f0f9f8;
+  background: #f4f7f9;
 }
 
 .cta-actions {
