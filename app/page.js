@@ -2,15 +2,49 @@
 export default function HomePage() {
   return (
     <>
+      <header className="header">
+        <div className="header-badge">Vet Alert Brasil</div>
+      </header>
+
       <main>
         {/* Hero section */}
         <section className="hero">
-          <h1>Vet Alert Brasil</h1>
+          <h1>Inteligência epidemiológica veterinária com foco preventivo</h1>
           <p className="hero-subtitle">
-            Inteligência epidemiológica para prevenção e resposta rápida em saúde
-            animal. Alertas anônimos fortalecem a vigilância regional sem
-            interferir na conduta clínica.
+            Plataforma nacional para alertas regionais anônimos sobre surtos,
+            contaminações tóxicas e reações adversas a medicamentos. Sem coleta
+            de dados pessoais e sem interferência em decisões clínicas.
           </p>
+        </section>
+
+        {/* Core principles summary */}
+        <section>
+          <div className="metrics">
+            <div className="metric-card">
+              <span aria-hidden="true">📍</span>
+              <h3>Inteligência regional</h3>
+              <p>
+                Sinais do campo e da clínica agregados para mapear tendências e
+                apoiar a vigilância sanitária local.
+              </p>
+            </div>
+            <div className="metric-card">
+              <span aria-hidden="true">🔒</span>
+              <h3>Alertas 100% anônimos</h3>
+              <p>
+                Nenhum nome, nenhum endereço, nenhuma identificação. Apenas
+                território, espécie e sinal observado.
+              </p>
+            </div>
+            <div className="metric-card">
+              <span aria-hidden="true">🩺</span>
+              <h3>Para quem está em campo</h3>
+              <p>
+                Informação objetiva para profissionais que atuam sob alta
+                responsabilidade e tempo limitado.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* What it is section */}
@@ -20,7 +54,7 @@ export default function HomePage() {
             Vet Alert Brasil é uma plataforma de inteligência epidemiológica que
             permite o envio de alertas regionais sobre surtos, contaminações
             tóxicas e reações adversas a medicamentos. Os dados são anônimos e
-            utilizados apenas para identificar tendências regionais.
+            utilizados exclusivamente para identificar tendências regionais.
           </p>
         </section>
 
@@ -29,24 +63,24 @@ export default function HomePage() {
           <h2>Como funciona</h2>
           <div className="info-grid">
             <div className="card">
-              <h3>1. Envio rápido</h3>
+              <h3>1. Registro essencial</h3>
               <p>
-                O(a) veterinário(a) registra um alerta anônimo com informações
-                essenciais do evento observado.
+                O(a) veterinário(a) informa o evento observado com dados mínimos
+                e objetivos.
               </p>
             </div>
             <div className="card">
-              <h3>2. Análise regional</h3>
+              <h3>2. Consolidação segura</h3>
               <p>
-                Os dados são agregados e analisados para identificar padrões
-                locais e tendências emergentes.
+                As informações são agregadas em nível regional, sem identificação
+                individual.
               </p>
             </div>
             <div className="card">
               <h3>3. Inteligência preventiva</h3>
               <p>
-                A plataforma compartilha sinais regionais para apoiar prevenção
-                e planejamento sanitário.
+                Relatórios e sinais regionais apoiam prevenção, planejamento e
+                resposta sanitária.
               </p>
             </div>
           </div>
@@ -74,8 +108,8 @@ export default function HomePage() {
         <section className="cta">
           <h2>Participação no piloto</h2>
           <p>
-            Projeto piloto planejado para Santa Catarina, com foco em colaboração
-            ética e proteção de dados.
+            Piloto planejado para Santa Catarina, com foco em colaboração ética
+            e proteção de dados em conformidade com a LGPD.
           </p>
           <button type="button">Participar do piloto em Santa Catarina</button>
         </section>
